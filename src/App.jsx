@@ -1,4 +1,4 @@
-import Hero from './components/hero.jsx'
+import Hero from './components/calculator.jsx'
 
 const App = () => {
   return (
