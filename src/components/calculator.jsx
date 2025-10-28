@@ -1,4 +1,4 @@
-const Calculator = () => {
+const Calculator = (props) => {
   const appendValue = value => {
     const input = document.getElementById('calcInput');
     input.value += value;
@@ -24,8 +24,10 @@ const Calculator = () => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'column',
       }}
     >
+      <h1>{props.title.average}</h1>
       <div
         style={{
           display: 'flex',
@@ -44,7 +46,7 @@ const Calculator = () => {
           disabled
           style={{
             background: 'white',
-            padding:"4px 8px"
+            padding: '4px 8px',
           }}
           placeholder="-------------------------------------------"
         />
