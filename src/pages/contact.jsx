@@ -1,39 +1,51 @@
-import ContactCard from "../components/contactCard"
-import Button from "../components/primary-btn"
-import "../assets/css/contact.css"
+import ContactCard from '../components/contactCard';
+import Button from '../components/primary-btn';
+import styles from '../assets/css/contact.module.css';
 const contact = () => {
   return (
     <main>
-      <section className="contactSection">
-        <div className="containerlarge">
-          <div className="contentWrapper">
+      <section className={styles.contactSection}>
+        <div className={styles.containerlarge}>
+          <div className={styles.contentWrapper}>
             <h2>Connect with Your Trusted Accounting Advisors</h2>
-            <div className="mainContent">
-              <div className="leftContent">
+            <div className={styles.mainContent}>
+              <div className={styles.leftContent}>
                 <h4>Reach us anytime via Call, Email, or a Visit</h4>
-                <div className="actions">
-                  <ContactCard
-                    src="/call.svg"
-                    title="Give us call"
-                    text="(407) 298-9140 x1192"
-                    width="100%"
-                  />
-                  <ContactCard
-                    src="/mail.svg"
-                    title="Send us Email"
-                    text="Henry.Blick@hotmail.com"
-                    width="100%"
-                  />
-                  <ContactCard
-                    src="/location.svg"
-                    title="Our Location"
-                    text="59875 Parisian Fork"
-                    width="100%"
-                  />
+                <div className={styles.actions}>
+                  <a href="tel:+14072989140">
+                    <ContactCard
+                      src="/call.svg"
+                      title="Give us call"
+                      text="(407) 298-9140 x1192"
+                      width="100%"
+                    />
+                  </a>
+
+                  <a href="mailto:Henry.Blick@hotmail.com">
+                    <ContactCard
+                      src="/mail.svg"
+                      title="Send us Email"
+                      text="Henry.Blick@hotmail.com"
+                      width="100%"
+                    />
+                  </a>
+
+                  <a
+                    href="https://goo.gl/maps/your-location-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <ContactCard
+                      src="/location.svg"
+                      title="Our Location"
+                      text="59875 Parisian Fork"
+                      width="100%"
+                    />
+                  </a>
                 </div>
               </div>
               <form action="" id="contactForm">
-                <div className="form-top">
+                <div className={styles.formTop}>
                   <input
                     type="text"
                     id="fnameInput"

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../assets/css/var.css"
 
 const footer = () => {
@@ -10,7 +11,9 @@ const footer = () => {
   };
   return (
     <footer style={footer}>
+      <Link to="/">
       <h1 style={{ color: "white" }}>Kaosar</h1>
+      </Link>
     </footer>
   );
 };

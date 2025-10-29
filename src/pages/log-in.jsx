@@ -1,18 +1,18 @@
 import Button from '../components/primary-btn';
-import '../assets/css/login.css';
+import styles from '../assets/css/login.module.css';
 const login = () => {
   return (
-    <div className="loginSection">
-      <div className="defaultContainer">
-        <div className="contentWrapper">
-          <div className="loginWrap">
+    <div className={styles.loginSection}>
+      <div className={styles.defaultContainer}>
+        <div className={styles.contentWrapper}>
+          <div className={styles.loginWrap}>
             <img src="/logo.png" alt="logo" width="40px" />
-            <div className="topText">
+            <div className={styles.topText}>
               <h5>Welcome to the Profunds</h5>
               <p>Log in to continue.</p>
 
               <form action="#" id='login'>
-                <div className="form-control">
+                <div className={styles.formcontrol}>
                   <label htmlFor="">Email*</label>
                   <input
                     type="email"
@@ -21,7 +21,7 @@ const login = () => {
                     required
                   />
                 </div>
-                <div className="form-control">
+                <div className={styles.formcontrol}>
                   <label htmlFor="">Password*</label>
                   <input
                     type="text"

@@ -1,16 +1,23 @@
+import { Outlet } from 'react-router-dom';
+import Nav from './components/nav';
+import Footer from './components/footer';
+
 const App = () => {
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: '120px',
-      }}
-    >
-      <h1>Home</h1>
-    </div>
+    <>
+      <Nav />
+      <main
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height:"Fft-content"
+        }}
+      >
+        <Outlet />
+      </main>
+      <Footer />
+    </>
   );
 };
 

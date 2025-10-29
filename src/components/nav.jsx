@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../assets/css/var.css';
-import Button from "./primary-btn"
+import Button from './primary-btn';
 
 const nav = () => {
   const navSection = {
@@ -23,15 +23,32 @@ const nav = () => {
   const contentWrapper = {
     display: 'flex',
     justifyContent: 'space-between',
+    alignItems:"center",
     width: '100%',
   };
+  const navlinks = {
+    display: "flex",
+    gap:"30px"
+  }
 
   return (
     <div style={navSection}>
       <div style={containerLarge}>
         <div style={contentWrapper}>
-          <img src="/navlogo.svg" alt="" />
-          <Button btnTitle="Contact Us" />
+          <Link to={'/'}>
+            <img src="/navlogo.svg" alt="" />
+          </Link>
+          <div style={navlinks}>
+            <Link to={'/signup'}>
+              <p>Sign Up</p>
+            </Link>
+            <Link to={'/login'}>
+              <p>Login</p>
+            </Link>
+          </div>
+          <Link to={'/contact'}>
+            <Button btnTitle="Contact Us" />
+          </Link>
         </div>
       </div>
     </div>

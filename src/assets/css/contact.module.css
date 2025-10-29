@@ -1,6 +1,7 @@
 @import './var.css';
 main{
   min-height: 100vh;
+  width: 100%;
 }
 .contactSection {
   display: flex;
@@ -12,14 +13,16 @@ main{
 }
 .containerlarge {
   display: flex;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px; /* shrinkable */
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .contentWrapper {
   display: flex;
-  width: 1200px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   gap: 60px;
@@ -44,15 +47,17 @@ main{
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
+}.actions a{
+  width: 100%;
 }
-.form-top {
+.formTop {
   display: flex;
   align-items: flex-start;
   gap: 24px;
   align-self: stretch;
 }
 
-#contactForm {
+.contactSection form {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -85,7 +90,8 @@ textarea {
 }
 .contactSection input:focus,
 .contactSection textarea:focus {
-  color: var(--Neutral-Black-900, #ff0000);
+  border: 1px solid var(--Brand-Primary);
+  outline: none;
 }
 .contactSection h2 {
   max-width: 540px;

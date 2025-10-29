@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 import Button from '../components/primary-btn';
 import '../assets/css/var.css';
-import '../assets/css/404.css';
+import styles from '../assets/css/404.module.css';
 const notFound = () => {
   return (
-    <div className="nfSection">
-      <div className="defaultContainer">
-        <div className="contentWrapper">
-          <div className="contentWrap">
+    <div className={styles.nfSection}>
+      <div className={styles.defaultContainer}>
+        <div className={styles.contentWrapper}>
+          <div className={styles.contentWrap}>
             <img src="/logo.png" alt="logo" width="40px" />
-            <div className="topText">
-              <h5>The page you are looking dosen't exist</h5>
+            <div className={styles.topText}>
+              <h3>The page you are looking dosen't exist</h3>
               <Link to={"/"}>
               <Button btnTitle="Go to Home" />
               </Link>

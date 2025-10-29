@@ -1,12 +1,12 @@
 @import './var.css';
 .nfSection {
   display: flex;
-  padding: 160px 0 160px 0;
+  /* padding: 160px 0 160px 0; */
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: stretch;
-  min-height: 100vh;
+  /* align-self: stretch; */
+  height: auto;
 }
 .defaultContainer {
   max-width: 1200px;
