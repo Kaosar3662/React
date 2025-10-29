@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+:root{
+  --Brand-Primary:#FFD24F;
+  --Secendary-Purple:#D4AEFF;
+  --Neutral-Black-900:#090F1F;
+  --Neutral-Black-800:#36373A;
+  --Neutral-Black-700:#414141;
+  --Neutral-Black-600:#6C6C6F;
+  --Neutral-White-400:#BFC4C5;
+  --Neutral-White-200:#EFE8F7;
+  --Neutral-White:#ffffff;
+
+  --button:16px;
+  --caption:12px;
+  --line-height:120%;
+  --medium:400;
+  --semibold:500;
+
+  --font: Onest;
+}
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  min-height: 100vh;
+}
+h1{
+  font-size: 68px;
+  font-family: var(--font);
+  color: var(--Neutral-Black-900);
+  font-weight: var(--medium);
+}
+h2{
+  font-size: 42px;
+  font-family: var(--font);
+  color: var(--Neutral-Black-900);
+  font-weight: var(--medium);
+}
+h3{
+  font-size: 34px;
+  font-family: var(--font);
+  color: var(--Neutral-Black-900);
+  font-weight: var(--medium);
+}
+h4{
+  font-size: 30px;
+  font-family: var(--font);
+  color: var(--Neutral-Black-900);
+  font-weight: var(--medium);
+}
+h5{
+  font-size: 24px;
+  font-family: var(--font);
+  color: var(--Neutral-Black-900);
+  font-weight: var(--medium);
+}
+h6{
+  font-size: 18px;
+  font-family: var(--font);
+  color: var(--Neutral-Black-900);
+  font-weight: var(--medium);
+}
+a{
+  text-decoration: none;
+}
